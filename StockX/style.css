@@ -1,0 +1,510 @@
+body{
+  padding: 0px;
+  margin: 0px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+nav.navbar.navbar-expand-md.navbar-light.bg-light.sticky-top {
+    height: 13vh;
+}
+
+.container {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.text-center {
+    text-align: center;
+}
+
+main {
+    display: block;
+}
+
+a.nav-link.border {
+    border-radius: 20px;
+    padding: 7px 15px !important;
+    border-color: black !important;
+}
+
+
+
+li {
+    list-style: none;
+}
+
+li a {
+    color: #d3d3d37a;
+}
+
+a{
+  text-decoration: none;
+}
+
+.row {
+    padding: 10px 0px 20px 0px;
+}
+
+.mainfooter{
+  color: white;
+  font-size: 18px;
+}
+
+.br {
+    height: 1px;
+    background: #d3d3d37a;
+    margin: 0;
+}
+
+.contact {
+    text-align: center;
+}
+
+.contact a {
+text-decoration: none;
+color: white;
+padding: 10px;
+}
+
+.banner {
+    background-image: url(http://stockx-assets.imgix.net/Core/homepage/hero_image_FW_2021.png?auto=compress,format);
+    height: 512px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+}
+
+
+span {
+    display: block;
+}
+
+.banner h1 {
+    text-align: center;
+}
+
+span.Sbanner {
+    font-size: 3.5rem;
+    font-weight: 700;
+    padding: 0.5rem;
+    padding-top: 30px;
+    font-family: 'Montserrat';
+}
+
+span.Sbanner2 {
+    font-size: 3.5rem;
+    background: black;
+    color: white;
+    font-weight: 700;
+    padding: 0.5rem;
+    letter-spacing: -1px;
+    display: inline-block;
+    border-radius: 4px;
+    font-family: 'Montserrat';
+}
+
+input.search {
+    color: #010101;
+    padding-left: 60px;
+    font-size: 18px;
+    height: 48px;
+    font-weight: 400;
+    width: 554px;
+    display: block;
+    border: none;
+    margin: 16px auto;
+    border-radius: 4px;
+}
+
+i.fa.fa-search {
+    position: absolute;
+    z-index: 200;
+    font-size: 18px;
+    color: black;
+    top: 315px;
+    left: 505px;
+}
+
+nav.switcher {
+    display: initial;
+}
+
+ul.ulSwitcher {
+    padding-left: initial;
+    padding-right: initial;
+    border-bottom: initial;
+}
+
+.mainSwitch {
+    display: flex;
+    margin: auto;
+    width: 768px;
+    justify-content: space-between;
+    -webkit-box-pack: justify;
+}
+
+.Sneakers {
+    box-shadow: inset 0 -5px 0 0 black;
+    margin-top: 0.75rem;
+    text-transform: capitalize;
+    font-weight: 400;
+    color: #000000;
+    cursor: pointer;
+    white-space: nowrap;
+    height: 38px;
+    font-size: 20px;
+    margin-left: initial;
+    margin-right: initial;
+}
+
+.Streetwear {
+    margin-top: 0.75rem;
+    text-transform: capitalize;
+    font-weight: 400;
+    color: #000000;
+    cursor: pointer;
+    white-space: nowrap;
+    height: 38px;
+    font-size: 20px;
+    margin-left: initial;
+    margin-right: initial;
+    box-shadow: inset 0 -5px 0 0 transparent;
+}
+
+
+.Electronic {
+    margin-top: 0.75rem;
+    text-transform: capitalize;
+    font-weight: 400;
+    color: #000000;
+    cursor: pointer;
+    white-space: nowrap;
+    height: 38px;
+    font-size: 20px;
+    margin-left: initial;
+    margin-right: initial;
+    box-shadow: inset 0 -5px 0 0 transparent;
+}
+
+.Collectibles {
+    margin-top: 0.75rem;
+    text-transform: capitalize;
+    font-weight: 400;
+    color: #000000;
+    cursor: pointer;
+    white-space: nowrap;
+    height: 38px;
+    font-size: 20px;
+    margin-left: initial;
+    margin-right: initial;
+    box-shadow: inset 0 -5px 0 0 transparent;
+}
+
+.Handbags {
+    margin-top: 0.75rem;
+    text-transform: capitalize;
+    font-weight: 400;
+    color: #000000;
+    cursor: pointer;
+    white-space: nowrap;
+    height: 38px;
+    font-size: 20px;
+    margin-left: initial;
+    margin-right: initial;
+    box-shadow: inset 0 -5px 0 0 transparent;
+}
+
+.Watches {
+    box-shadow: inset 0 -5px 0 0 transparent;
+    margin-top: 0.75rem;
+    text-transform: capitalize;
+    font-weight: 400;
+    color: #000000;
+    cursor: pointer;
+    white-space: nowrap;
+    height: 38px;
+    font-size: 20px;
+    margin-left: initial;
+    margin-right: initial;
+}
+
+.brands {
+    display: flex;
+    margin-top: 24px;
+    width: 100%;
+    font-size: 20px;
+    color: black;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 16px;
+}
+
+a.Seeall {
+    color: #08A05C;
+    font-size: 18px;
+    font-weight: normal;
+}
+
+a.Seeall:hover {
+    color: #08A05C;
+    font-size: 18px;
+    font-weight: normal;
+    text-decoration: none;
+}
+
+img.brand-image {
+    width: 100%;
+    position: relative;
+}
+
+img.brandIcon {
+    width: 56px;
+    height: 56px;
+    object-fit: contain;
+    position: absolute;
+    left: 70%;
+}
+
+.card.col-md {
+  margin: 10px;
+  padding: 0px;
+  text-align: left;
+  position: relative;
+  color: black;
+  width: 200px;
+}
+
+.card-body {
+    background-color: #d3d3d333;
+}
+
+.card-img.mx-auto {
+    width: 73%;
+    margin: 16px;
+}
+
+p.card-text {
+    color: #999595;
+    font-family: 'Montserrat';
+}
+
+.card-body h5 {
+    font-weight: 500;
+    font-family: 'Montserrat';
+}
+
+h2.card-title {
+    font-weight: 700;
+    font-size: 22px;
+}
+
+a.bg-success.text-white {
+    border-radius: 4px;
+    margin-top: 2.5rem;
+    margin-bottom: 2.5rem;
+    margin-left: 0;
+    margin-right: 0;
+    display: inline-block;
+    width: 50%;
+    font-size: 18px;
+    margin: 40px;
+    padding: 25px 30px 22px;
+    text-decoration: none;
+}
+
+img.card-img-top.pant {
+    margin-left: 30%;
+    width: 36%;
+}
+
+.row.row-card a:hover {
+    color: black;
+    text-decoration: none;
+}
+
+.article {
+    text-align: left;
+    font-size: 18px;
+    padding-bottom: 25px;
+    padding-top: 25px;
+    border-bottom: 1px solid;
+}
+
+.article a {
+    text-decoration: none;
+    color: black;
+}
+
+.article a:hover {
+    text-decoration: none;
+    color: black;
+}
+
+.article h3 {
+    font-size: 23px;
+    margin: 0;
+}
+
+img.btn-corner {
+    width: 20px;
+    height: 20px;
+}
+
+button.btn {
+    margin-top: -3px;
+}
+
+span {
+    font-size: 18px;
+}
+
+.month.col {
+    margin-top: 4px;
+}
+
+.card-body.releases-body {
+    text-align: left;
+    background-color: white;
+}
+
+.card.col-md-4 {
+    padding: 0;
+}
+
+.card.col-md-4 a {
+    color: black;
+}
+
+.card.col-md-4 a:hover {
+    color: black;
+    text-decoration: none;
+}
+
+span.fa.fa-caret-down {
+    color: red;
+    font-size: 22px;
+}
+
+.releases-ask {
+    padding: 0px 5px 5px 5px;
+}
+
+.card-body.releases-body h5 {
+    font-size: 20px;
+    letter-spacing: -1px;
+}
+
+.card-body h5, p.card-text, h2.card-title {
+    margin: 0;
+}
+
+span.thick{
+  font-weight: bold;
+}
+
+.footer-row.row {
+    padding: 20px 80px;
+}
+
+.contact i {
+  color: white;
+}
+
+.proundly a {
+    text-decoration: none;
+    color: grey;
+}
+
+.proundly a:hover {
+    color: grey !important;
+    text-decoration: none !important;
+}
+
+.col-md-4 p {
+    color: grey;
+}
+
+footer{
+  color: white;
+  background-color: black;
+}
+
+.carousel-inner img {
+    width: 31%;
+    object-fit: cover;
+    margin-left: 35%;
+    height: 100%;
+}
+
+footer nav ul li a {
+  text-decoration: none;
+  transition: color 300ms;
+  font-size: 13px;
+}
+
+footer nav ul li a:hover {
+  text-decoration: none;
+  color: green;
+}
+
+a.mainfooter:hover {
+    color: white;
+    font-size: 18px;
+}
+
+.releases-ask p {
+    font-size: 15px;
+    color: black;
+    font-weight: 500;
+}
+
+@media screen and (max-width : 778px) {
+  footer{
+    height: 200vh;
+  }
+
+  i.fa.fa-search {
+    position: absolute;
+    z-index: 200;
+    font-size: 18px;
+    color: black;
+    top: 313px;
+    left: 127px;
+  }
+}
+
+@media screen and (max-width : 768px) {
+  footer{
+    height: 231vh;
+  }
+  .card.col-md-4 {
+    padding: 0;
+    width: 180px;
+  }
+  .card-img.mx-auto {
+    width: 80%;
+    margin: 16px;
+  }
+  .card-body.releases-body h5 {
+    font-size: 16px;
+    letter-spacing: -1px;
+  }
+  .releases-ask p {
+    font-size: 15px;
+    color: black;
+    font-weight: 500;
+  }
+  nav.navbar.navbar-expand-md.navbar-light.bg-light.sticky-top {
+    height: 9vh;
+  }
+  i.fa.fa-search {
+    position: absolute;
+    z-index: 200;
+    font-size: 18px;
+    color: black;
+    top: 286px;
+    left: 121px;
+  }
+}
