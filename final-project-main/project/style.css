@@ -1,0 +1,30 @@
+body{
+  background: black !important;
+}
+#logo{
+  font-family: 'Calligraffitti', cursive;
+}
+#demo .carousel-inner img {
+    width: 100%;
+    height: 120vh;
+}
+
+.swiper-container {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+}
+.swiper-slide img{
+  height: 100vh;
+}
+span.swiper-pagination-bullet {
+    background: white;
+}
+hr{
+  background-color: white;
+  width: 75%;
+}
