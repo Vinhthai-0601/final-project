@@ -4,6 +4,12 @@
   font-family: 'Calligraffitti', cursive;
 }
 
+body {
+    background: url(https://i.pinimg.com/originals/c4/f4/bc/c4f4bcba01f0ba6001d56f9a144ced88.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 .brands {
     display: flex;
     margin-top: 24px;
