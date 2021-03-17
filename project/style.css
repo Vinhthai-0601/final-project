@@ -28,3 +28,9 @@ hr{
   background-color: white;
   width: 75%;
 }
+.pre a i {
+    font-size: 45px;
+}
+p {
+    font-weight: lighter;
+}
