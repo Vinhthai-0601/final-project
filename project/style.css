@@ -16,7 +16,8 @@ a#logo:hover {
 
 #demo .carousel-inner img {
     width: 100%;
-    height: 120vh;
+    height: 106vh;
+    object-fit: cover;
 }
 
 .swiper-container {
@@ -52,4 +53,10 @@ hr{
 }
 p {
     font-weight: lighter;
+}
+
+.col-md-4 img {filter: brightness(0.5);}
+
+.col-md-4 img:hover {
+    filter: none;
 }
