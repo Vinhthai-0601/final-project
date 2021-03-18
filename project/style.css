@@ -3,7 +3,17 @@ body{
 }
 #logo{
   font-family: 'Calligraffitti', cursive;
+  transition: font-size 300ms;
 }
+
+.fo {
+    color: white;
+}
+
+a#logo:hover {
+    font-size: 25px;
+}
+
 #demo .carousel-inner img {
     width: 100%;
     height: 120vh;
@@ -12,6 +22,15 @@ body{
 .swiper-container {
   width: 100%;
   height: 100%;
+}
+
+.text{
+  color: white;
+}
+
+a.text:hover {
+    text-decoration: none;
+    color: #9d9d9d;
 }
 
 .swiper-slide {
