@@ -2,6 +2,11 @@
 
 #logo{
   font-family: 'Calligraffitti', cursive;
+  transition: font-size 300ms;
+}
+
+a#logo:hover {
+    font-size: 25px;
 }
 
 body {
@@ -22,8 +27,19 @@ body {
     margin-bottom: 16px;
 }
 
+img.brandicon {
+    width: 56px;
+    height: 56px;
+    object-fit: contain;
+    position: absolute;
+    left: 70%;
+}
+span.thick {
+    color: white;
+}
+
 a.Seeall{
-  color: black;
+  color: white;
 }
 
 a.Seeall:hover{
@@ -56,9 +72,26 @@ img.brand-image {
 .card-img {
     width: 100%;
     height: 160px;
-
 }
 
-footer.navbar-dark.bg-dark {
-    text-align: center;
+img.card-img:hover {
+    filter: drop-shadow(2px 4px 6px black);
+}
+
+.text {
+    color: white;
+}
+
+a.text:hover {
+    text-decoration: none;
+    color: #9d9d9d;
+}
+
+.pre a i {
+    font-size: 45px;
+}
+
+.fo p {
+    color: white;
+    margin: 0px;
 }

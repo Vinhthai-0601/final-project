@@ -1,9 +1,19 @@
 #logo{
   font-family: 'Calligraffitti', cursive;
+  transition: font-size 300ms;
+}
+
+a#logo:hover {
+    font-size: 25px;
 }
 .info {
     background: url(images/bg1.jpg);
     background-size: cover;
+}
+.row {
+    margin-top: 10px;
+    margin-right: 10px !important;
+    margin-left: 10px !important;
 }
 .row img {
     width: 100%;
@@ -13,5 +23,5 @@
 }
 
 .info.text-white img {
-    border-radius: 50px 10px;
+    border-radius: 30px 30px;
 }
