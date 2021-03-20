@@ -6,9 +6,6 @@ body{
   transition: font-size 300ms;
 }
 
-.fo {
-    color: white;
-}
 
 a#logo:hover {
     font-size: 25px;
@@ -55,8 +52,13 @@ p {
     font-weight: lighter;
 }
 
-.col-md-4 img {filter: brightness(0.5);}
+.col-md-4 img {
+  filter: brightness(0.5);
+}
 
 .col-md-4 img:hover {
     filter: none;
+}
+iframe{
+  border: none;
 }

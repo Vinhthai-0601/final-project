@@ -1,3 +1,7 @@
+body{
+  background: black !important;
+}
+
 #logo{
   font-family: 'Calligraffitti', cursive;
   transition: font-size 300ms;
@@ -6,15 +10,21 @@
 a#logo:hover {
     font-size: 25px;
 }
-.info {
-    background: url(images/bg1.jpg);
-    background-size: cover;
+
+.text{
+  color: white;
 }
-.row {
-    margin-top: 10px;
-    margin-right: 10px !important;
-    margin-left: 10px !important;
+
+a.text:hover {
+    text-decoration: none;
+    color: #9d9d9d;
 }
+
+.pre p {
+    font-weight: lighter;
+}
+
+
 .row img {
     width: 100%;
 }
@@ -22,6 +32,40 @@ a#logo:hover {
     font-size: 30px;
 }
 
-.info.text-white img {
+.info img {
     border-radius: 30px 30px;
+}
+iframe{
+  border: none;
+}
+.intro {
+    position: relative;
+    color: white;
+    filter: blur();
+}
+
+.about {
+    position: absolute;
+    bottom: 15px;
+    margin: auto;
+}
+.about p {
+    column-count: 2;
+}
+
+.intro {
+    filter: grayscale(1);
+}
+
+.row {
+    margin: 100px 0;
+}
+
+.pre.row.text-white {
+    margin: 15px 0;
+}
+
+
+.pre a i {
+    font-size: 45px;
 }
