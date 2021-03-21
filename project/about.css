@@ -86,7 +86,11 @@ iframe{
     margin: 15px 0;
 }
 
-
 .pre a i {
     font-size: 45px;
+}
+
+#row1, #row2, #row3, #row4 {
+  opacity: 0;
+  transition: opacity 400ms;
 }
