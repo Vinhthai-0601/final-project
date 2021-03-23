@@ -19,6 +19,11 @@
   box-sizing: border-box;
   outline: none;
 }
+p.error {
+    color: red;
+    font-style: italic;
+    display: none;
+}
 .custom-input:click{
   border: none;
 }

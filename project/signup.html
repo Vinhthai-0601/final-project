@@ -55,24 +55,28 @@
       <div class="row background">
         <div class="col-md-6 left-col">
           <h1 class="mb-5"><b>Sign up</b></h1>
-          <form action="" method="POST">
+          <form action="" method="POST" id="form-signup">
             <div class="form-group">
                 <label for="name"><i class="zmdi zmdi-account material-icons-name"></i></label>
                 <input class="custom-input" type="text" name="name" id="name" placeholder="Your Name"/>
+                <p class="error error-uname">Username must be between 10-20 characters!!!</p>
             </div>
             <div class="form-group">
               <label for="email"><i class="zmdi zmdi-email"></i></label>
               <input class="custom-input" type="email" name="name" id="email" placeholder="Your Email"/>
+              <p class="error error-email">Please enter a valid email!!!</p>
             </div>
             <div class="form-group">
               <label for="password"><i class="zmdi zmdi-lock"></i></label>
               <input class="custom-input" type="password" name="name" id="password" placeholder="Password"/>
               <i style="position: absolute; top: 32%; right: 2px;" class="fa fa-eye-slash showpwd" onClick="showPwd('password', this)"></i>
+              <p class="error error-pass1">Password must be between 10-20 characters!!!</p>
             </div>
             <div class="form-group">
               <label for="re-password"><i class="zmdi zmdi-lock-outline"></i></label>
               <input class="custom-input" type="password" name="name" id="re-password" placeholder="Repeat Password"/>
               <i style="position: absolute; top: 32%; right: 2px;" class="fa fa-eye-slash showpwd" onClick="showPwd('re-password', this)"></i>
+              <p class="error error-pass2">Passwords don't match!!! Please check again.</p>
             </div>
             <div class="form-group">
               <input type="checkbox" name="agree-term" id="agree-term" class="agree-term" />

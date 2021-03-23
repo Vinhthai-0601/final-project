@@ -1,14 +1,11 @@
 let uname = document.querySelector("#name");
 let pass1 = document.querySelector("#password");
-let pass2 = document.querySelector("#re-password");
-let email = document.querySelector("#email");
-let form = document.querySelector("#form-signup");
 let error = document.querySelectorAll("p.error");
+let form = document.querySelector("#form-signup");
+
 let errors = {
   unameerr: false,
-  pass1err: false,
-  pass2err: false,
-  emailerr: false,
+  passerr: false,
 };
 
 form.addEventListener("submit",function(e){
@@ -16,8 +13,6 @@ form.addEventListener("submit",function(e){
   console.log("Form Submitted");
   checkName();
   checkPass1();
-  matchPassword();
-  checkEmail();
 
   let formfail = false;
   // loop through errors obj to check if any errors = true
@@ -29,24 +24,11 @@ form.addEventListener("submit",function(e){
     }
   })
   if(formfail) {
-    alert("The form failed, please correct errors");
+    alert("Log in failed, please correct errors");
   } else {
-    alert("form submitted successfully");
+    alert("Log in successfully");
   }
 });
-
-
-//check emaile
-function checkEmail() {
-  let pattern = new RegExp(/^[+a-zA-Z1-9._-]+@[a-zA-Z1-9.-]+\.[a-zA-Z]{2,4}$/i);
-  if(pattern.test(email.value)) {
-    console.log("true, email valid");
-    hideFalse(error[1], errors.emailerr);
-  } else {
-    console.log("false, email invalid");
-    showTrue(error[1], errors.emailerr);
-  }
-}
 
 //check Name
 function checkName(){
@@ -64,28 +46,15 @@ function checkName(){
 function checkPass1() {
   console.log("password check 1");
   if(pass1.value.length < 10 || pass1.value.length > 20) {
-    errors.pass1err = true;
-    error[2].style = "display:initial";
+    errors.passerr = true;
+    error[1].style = "display:initial";
   } else {
-    errors.pass1err = false;
-    error[2].style = "display:none";
-  }
-}
-
-//check match Password
-function matchPassword(){
-  if (pass1.value != pass2.value)
-    {errors.pass2err = true;
-    error[3].style = "display:initial";
-  } else {
-    errors.pass2err = false;
-    error[3].style = "display:none";
+    errors.passerr = false;
+    error[1].style = "display:none";
   }
 }
 
 
-
-//help function
 function showPwd(id, el) {
   let x = document.getElementById(id);
   if (x.type === "password") {
@@ -95,15 +64,4 @@ function showPwd(id, el) {
     x.type = "password";
     el.className = 'fa fa-eye-slash showpwd';
   }
-}
-
-//Helper functions
-function showTrue(el, err) {
-  el.style = "display: initial";
-  err = true;
-}
-
-function hideFalse(el, err) {
-  el.style = "display: none";
-  err = false;
 }
