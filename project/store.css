@@ -8,9 +8,10 @@ a#logo:hover {
 }
 
 body {
-    background: url(https://i.pinimg.com/originals/c4/f4/bc/c4f4bcba01f0ba6001d56f9a144ced88.jpg);
+    background: url(https://yalantis.com/uploads/ckeditor/pictures/2916/dribble_perfect.gif);
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
 }
 
 .brands {
