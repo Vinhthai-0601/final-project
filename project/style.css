@@ -19,6 +19,24 @@ body{
     display: flex;
 }
 
+progress {
+    z-index: 5;
+    width: 100%;
+    height: 5px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border: none;
+    background-color: transparent;
+    color: #F16522;
+    vertical-align: top;
+    display: block;
+    position: fixed;
+    margin-top: 60px;
+    display: none;
+    opacity: 0;
+}
+
 a#logo:hover {
     font-size: 25px;
 }
@@ -69,11 +87,14 @@ a.text:hover {
     color: #9d9d9d;
 }
 
+.swiper-wrapper {
+    display: none;
+    opacity: 0;
+}
+
 .swiper-slide {
   text-align: center;
   font-size: 18px;
-  display: none;
-  opacity: 0;
 }
 .swiper-slide img{
   height: 100vh;
