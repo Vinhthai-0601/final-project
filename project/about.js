@@ -1,5 +1,6 @@
 document.addEventListener("DOMContentLoaded", ()=>{
   window.onscroll = function(){scrollEvent()};
+
 })
 
 function scrollEvent() {
@@ -8,7 +9,7 @@ function scrollEvent() {
   let el2 = document.querySelector("#row2");
   let el3 = document.querySelector("#row3");
   let el4 = document.querySelector("#row4");
-  console.log(height);
+  let el5 = document.querySelector("nav");
   if(height >= 200){
     fadeIn(el1);
   }
@@ -21,9 +22,39 @@ function scrollEvent() {
   if (height >= 1500) {
     fadeIn(el4);
   }
+  if (height >= 100){
+    changeClass(el5);
+  }
+  if (height == 0) {
+    updateClass(el5);
+  }
 }
+
 function fadeIn(el) {
   setTimeout(function() {
     el.style.opacity = "1";
   }, 300);
+}
+// function scrollTop() {
+//   let height = window.pageYOffset;
+//   let navbar = document.getElementById("nav");
+//   if (height >= 100) {
+//     navbar.classList.remove("navbar-dark bg-dark");
+//     navbar.classList.add("navbar-light bg-light fixed-top");
+//
+//   }else{
+//     navbar.classList.remove("navbar-light bg-light");
+//     navbar.classList.add("navbar-dark bg-dark");
+//     navbar.style.padding = "10";
+//   }
+// }
+function changeClass(el) {
+  el.classList.remove("navbar-dark","bg-dark");
+  el.classList.add("navbar-light","bg-light", "fixed-top");
+  el.style.padding = "10";
+}
+function updateClass(el) {
+  el.classList.remove("navbar-light","bg-light");
+  el.classList.add("navbar-dark","bg-dark");
+  el.style.padding = "10";
 }
