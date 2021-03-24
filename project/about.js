@@ -35,19 +35,7 @@ function fadeIn(el) {
     el.style.opacity = "1";
   }, 300);
 }
-// function scrollTop() {
-//   let height = window.pageYOffset;
-//   let navbar = document.getElementById("nav");
-//   if (height >= 100) {
-//     navbar.classList.remove("navbar-dark bg-dark");
-//     navbar.classList.add("navbar-light bg-light fixed-top");
-//
-//   }else{
-//     navbar.classList.remove("navbar-light bg-light");
-//     navbar.classList.add("navbar-dark bg-dark");
-//     navbar.style.padding = "10";
-//   }
-// }
+
 function changeClass(el) {
   el.classList.remove("navbar-dark","bg-dark");
   el.classList.add("navbar-light","bg-light", "fixed-top");

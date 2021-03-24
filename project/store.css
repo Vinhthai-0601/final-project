@@ -65,12 +65,12 @@ img.brand-image {
 }
 
 .card-body {
-    background-color: #d3d3d333;
+    background-color: black;
 }
 
 .card-img {
     width: 100%;
-    height: 160px;
+    height: 15rem;
 }
 
 img.card-img:hover {
@@ -114,4 +114,17 @@ li.text-fo {
 .fo p {
     color: white;
     margin: 0px;
+}
+card.col-md {
+    background: black;
+}
+div a {
+    text-decoration-color: white !important;
+}
+button.btn{
+  margin: 20px;
+  padding: 10px 25px;
+  color: white;
+  background: #ffd555;
+  border-radius: 0;
 }
