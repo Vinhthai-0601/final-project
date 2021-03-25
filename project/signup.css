@@ -19,6 +19,11 @@
   box-sizing: border-box;
   outline: none;
 }
+
+::before {
+    padding-right: 10px;
+}
+
 p.error {
     color: red;
     font-style: italic;
@@ -73,6 +78,6 @@ ul li a i{
 }
 button{
   background: #6dabe4 !important;
-  padding: 15px 39px !important;
+  padding: 15px 30px !important;
   border: none !important;
 }
