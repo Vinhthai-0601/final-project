@@ -115,12 +115,14 @@ li.text-fo {
     color: white;
     margin: 0px;
 }
-card.col-md {
-    background: black;
+.card.col-md {
+    background: black !important;
 }
+
 div a {
     text-decoration-color: white !important;
 }
+
 button.btn{
   margin: 20px;
   padding: 10px 25px;
