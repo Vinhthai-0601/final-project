@@ -50,7 +50,7 @@ function checkEmail() {
 
 //check Name
 function checkName(){
-  if(uname.value.length < 5 || uname.value.length > 30)
+  if(uname.value.length < 10 || uname.value.length > 30)
   {
     errors.unameerr = true;
     error[0].style = "display:initial";
