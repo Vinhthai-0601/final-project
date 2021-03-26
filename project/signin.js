@@ -2,11 +2,13 @@ let uname = document.querySelector("#name");
 let pass1 = document.querySelector("#password");
 let error = document.querySelectorAll("p.error");
 let form = document.querySelector("#form-signup");
+let btn = document.getElementById('btn-1');
 
 let errors = {
   unameerr: false,
   passerr: false,
 };
+
 
 form.addEventListener("submit",function(e){
   e.preventDefault();
@@ -24,8 +26,10 @@ form.addEventListener("submit",function(e){
     }
   })
   if(formfail) {
+    changebtnfail();
     alert("Log in failed, please correct errors");
   } else {
+    changebtn();
     alert("Log in successfully");
   }
 });
@@ -64,4 +68,16 @@ function showPwd(id, el) {
     x.type = "password";
     el.className = 'fa fa-eye-slash showpwd';
   }
+}
+
+function changebtn(){
+  let output = `<button type="submit" class="btn btn-success mt-2"><i class="fa fa-check"></i></button>
+                <a href="signup.html" class="signup-image-link ml-5">Create an account</a>`;
+  btn.innerHTML = output;
+}
+
+function changebtnfail(){
+  let output = `<button type="submit" class="btn btn-fail mt-2"><i class="fa fa-times-circle"></i></button>
+                <a href="signup.html" class="signup-image-link ml-5">Create an account</a>`;
+  btn.innerHTML = output;
 }

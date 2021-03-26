@@ -4,6 +4,7 @@ let pass2 = document.querySelector("#re-password");
 let email = document.querySelector("#email");
 let form = document.querySelector("#form-signup");
 let error = document.querySelectorAll("p.error");
+let btn = document.getElementById('btn');
 let errors = {
   unameerr: false,
   pass1err: false,
@@ -30,8 +31,10 @@ form.addEventListener("submit",function(e){
   })
   if(formfail) {
     alert("The form failed, please correct errors");
+    changebtnfail();
   } else {
     alert("form submitted successfully");
+    changebtn();
   }
 });
 
@@ -106,4 +109,14 @@ function showTrue(el, err) {
 function hideFalse(el, err) {
   el.style = "display: none";
   err = false;
+}
+
+function changebtn(){
+  let output = `<button type="submit" class="btn btn-success mt-2"><i class="fa fa-check"></i></button>`;
+  btn.innerHTML = output;
+}
+
+function changebtnfail(){
+  let output = `<button type="submit" class="btn btn-fail mt-2"><i class="fa fa-times-circle"></i></button>`;
+  btn.innerHTML = output;
 }
