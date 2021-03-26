@@ -35,6 +35,7 @@ img.brandicon {
 }
 span.thick {
     color: white;
+    margin-top: 50px;
 }
 
 a.Seeall{
@@ -129,4 +130,27 @@ button.btn{
   color: white;
   background: #ffd555;
   border-radius: 0;
+}
+
+.navbar {
+    transition: all 0.4s;
+}
+
+.navbar .nav-link {
+    color: #fff;
+}
+
+.navbar .nav-link:hover,
+.navbar .nav-link:focus {
+    color: #fff;
+    text-decoration: none;
+}
+
+.navbar .navbar-brand {
+    color: #fff;
+}
+
+.navbar .navbar-brand-black {
+    color: black;
+    font-size: 20px
 }

@@ -1,28 +1,16 @@
 $(document).ready(function(){
-  let navbar = $("nav");
-  $(window).scroll(function(){
-    let height = $(window).scrollTop();
-    if(height >= 100)
-    {
-      navbar.removeClass("navbar-dark bg-dark");
-      navbar.addClass("navbar-light bg-light fixed-top");
-      navbar.css("padding","10");
-    }else {
-      navbar.removeClass("navbar-light bg-light");
-      navbar.addClass("navbar-dark bg-dark");
-      navbar.css("padding","10");
-    }
-  })
-
+  let navbar = document.querySelector("nav");
+  let logo = document.querySelector("#logo");
   let rolex = document.querySelector("#rolex");
   let omega = document.querySelector("#omega");
   let hublot = document.querySelector("#hublot");
   let blancpain = document.querySelector("#blancpain");
+
   getWatches(rolex, 1, 5);
   getWatches(omega, 3, 5);
   getWatches(hublot, 5, 5);
   getWatches(blancpain, 7, 5);
-  $("a").click(function(e){
+  $(".co").click(function(e){
     e.preventDefault();
     console.log(e.target);
     if(e.target.classList.contains('rolex')){
@@ -38,6 +26,23 @@ $(document).ready(function(){
       getWatches(blancpain,4,10);
     }
   })
+
+  $(window).scroll(function(){
+    let height = $(window).scrollTop();
+    if(height > 0)
+    {
+      logo.classList.remove("navbar-brand");
+      logo.classList.add("navbar-brand-black");
+      changeClass(navbar);
+    }
+    else if (height == 0) {
+      updateClass(navbar);
+      logo.classList.add("navbar-brand");
+      logo.classList.remove("navbar-brand-black");
+    }
+    console.log(height);
+  })
+
 })
 
 function getWatches(tar, min, max) {
@@ -70,4 +75,14 @@ function getImage(list, tar) {
     </a>`
   });
   tar.innerHTML = output;
+}
+
+function changeClass(el) {
+  el.classList.add("navbar-light","bg-light");
+  el.style.padding = "10";
+}
+
+function updateClass(el) {
+  el.classList.remove("navbar-light","bg-light");
+  el.style.padding = "10";
 }

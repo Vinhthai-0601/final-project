@@ -6,6 +6,23 @@ body{
   font-family: 'Calligraffitti', cursive;
   transition: font-size 300ms;
 }
+.navbar {
+    transition: all 0.4s;
+}
+
+.navbar .nav-link {
+    color: #fff;
+}
+
+.navbar .nav-link:hover,
+.navbar .nav-link:focus {
+    color: #fff;
+    text-decoration: none;
+}
+
+.navbar .navbar-brand {
+    color: #fff;
+}
 
 a#logo:hover {
     font-size: 25px;
