@@ -40,9 +40,50 @@ $(document).ready(function(){
       logo.classList.add("navbar-brand");
       logo.classList.remove("navbar-brand-black");
     }
-    console.log(height);
   })
 
+  $(".btn-usd").click(function (e){
+    e.preventDefault();
+    let list = document.querySelectorAll(".price-vnd");
+    if (list == null){
+      return;
+    }
+    let xhr = new XMLHttpRequest();
+    xhr.open("GET", "http://api.currencylayer.com/live?access_key=1fde868f210408c0ee5779d977723e09&format=1&currencies=VND", true);
+    xhr.onload = function() {
+      if(this.status == 200){
+        let rate = JSON.parse(this.responseText).quotes.USDVND;
+        list.forEach((item, i) => {
+          item.classList.remove("price-vnd");
+          item.classList.add("price-usd");
+          let icon = `<i class="fas fa-dollar-sign"></i> `;
+          item.innerHTML = icon + Math.ceil(parseInt(item.textContent.replace(/\D,*/g, "") / rate)).toLocaleString('en');
+        });
+      }
+    };
+    xhr.send();
+  });
+
+  $(".btn-vnd").click(function (e){
+    e.preventDefault();
+    let list = document.querySelectorAll(".price-usd");
+    if (list == null){
+      return;
+    }
+    let xhr = new XMLHttpRequest();
+    xhr.open("GET", "http://api.currencylayer.com/live?access_key=1fde868f210408c0ee5779d977723e09&format=1&currencies=VND", true);
+    xhr.onload = function() {
+      if(this.status == 200){
+        let rate = JSON.parse(this.responseText).quotes.USDVND;
+        list.forEach((item, i) => {
+          item.classList.remove("price-usd");
+          item.classList.add("price-vnd");
+          item.textContent = Math.ceil(parseInt(item.textContent.replace(",","") * rate)).toLocaleString() + " VND";
+        });
+      }
+    };
+    xhr.send();
+  });
 })
 
 function getWatches(tar, min, max) {
@@ -63,16 +104,12 @@ function getWatches(tar, min, max) {
 function getImage(list, tar) {
   let output = "";
   list.forEach((item, i) => {
-    let price = item.price.toLocaleString('en');
     output += `<a href="#">
       <div class="card col-md ">
         <img src="${item.image}" class="card-img ">
           <div class="card-body text-white">
             <h5>${item.name}</h5>
-            <h4><i class="fas fa-dollar-sign"></i> ${price}</h4>
-            <div class="container-1">
-              <button class="btn">Button</button>
-            </div>
+            <h4 class="price-usd"><i class="fas fa-dollar-sign"></i> ${item.price.toLocaleString('en')}</h4>
           </div>
       </div>
     </a>`
