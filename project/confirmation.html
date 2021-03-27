@@ -9,7 +9,7 @@
 	<link href="etao.css" media="screen" rel="stylesheet" type="text/css" />
 	<link href="cart.css" media="screen" rel="stylesheet" type="text/css" />
 	<link href="bootstrap.min.css" media="screen" rel="stylesheet" type="text/css" />
-<title>Test Cart shop</title>
+<title>Luxury World </title>
 </head>
 <body class="container">
 <script type="text/javascript">
@@ -27,7 +27,7 @@
                 url: "<?php echo $this->baseUrl . '/system/address/save.ajax' ?>",
                 type: 'POST',
                 data: {"customer":$('#customer').val(),"address":$('#address').val(),"zip_code":$('#zip_code').val(),"telephone":$('#telephone').val(),"cell_phone":$('#cell_phone').val(),"contact_person":$('#contact_person').val(),"province_name":$('#province_name').val(),"city_name":$('#city_name').val(),"area_name":$('#area_name').val(),"is_default":0},
-                error: function() { alert("添加收货地址出错!!"); },
+                error: function() { alert("Đã phát hiện ra lỗi!!"); },
                 success: function(msg) {
                     //alert(msg);
                     $(".address-list li").removeClass("selected");
@@ -69,7 +69,7 @@
                 url: "<?php echo $this->baseUrl . '/trans/iris/save.ajax' ?>",
                 type: 'POST',
                 data: {"db_action":$('#db_action').val(),"customer_id":$('#customer_id').val(),"project_name":$('#project_name').val(),"project_site":$('#project_site').val(),"project_cycle":$('#project_cycle').val(),"project_vendor":$('#project_vendor').val(),"freezing_medium":$('#freezing_medium').val(),"is_valid":$('#is_valid').val()},
-                error: function() { alert("添加IRIS项目出错!!"); },
+                error: function() { alert("Đã phát hiện ra lỗi!!"); },
                 success: function(msg) {
                     $("#new_iris_project_dialog").modal("hide");
                     location.reload();

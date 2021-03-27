@@ -4,10 +4,10 @@ function supporthHtml5() {
 
 function addfavorite(theUrl) {
     if (document.all) {
-        window.external.addFavorite(theUrl, 'Emerson Web Order');
+        window.external.addFavorite(theUrl, 'Luxury Watches Web Order');
     }
     else if (window.sidebar) {
-        window.sidebar.addPanel('Emerson Web Order', theUrl, '');
+        window.sidebar.addPanel('Luxury Watches Web Order', theUrl, '');
     }
 }
 
