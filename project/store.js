@@ -70,6 +70,9 @@ function getImage(list, tar) {
           <div class="card-body text-white">
             <h5>${item.name}</h5>
             <h4><i class="fas fa-dollar-sign"></i> ${price}</h4>
+            <div class="container-1">
+              <button class="btn">Button</button>
+            </div>
           </div>
       </div>
     </a>`
