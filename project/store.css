@@ -63,6 +63,7 @@ img.brand-image {
   position: relative;
   color: black;
   width: 200px;
+  height: 100%;
 }
 
 .card-body {

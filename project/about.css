@@ -6,6 +6,8 @@ body{
   font-family: 'Calligraffitti', cursive;
   transition: font-size 300ms;
 }
+
+
 .navbar {
     transition: all 0.4s;
 }

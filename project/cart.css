@@ -3,10 +3,54 @@ body{padding:0;padding-top:58px;}
 .large-bold-red {color:#FF5500;font-weight: bold;font-size: 26px;}
 .small-bold-red {color:#FF5500;font-weight: bold;font-size: 18px;}
 .smaller-bold-red {color:#FF5500;font-weight: bold;font-size: 12px;}
-
+#logo{
+  font-family: 'Calligraffitti', cursive;
+  transition: font-size 300ms;
+}
 .cart-wrap {
 	line-height: 2.8rem;
 }
+
+body.container {
+    background: url(https://media.giphy.com/media/xVn3ZmKrKIOLS/giphy.gif);
+}
+
+label {
+    color: white;
+}
+
+th.text-center {color: white;}
+.navbar {
+    transition: all 0.4s;
+}
+a#logo:hover {
+    font-size: 25px;
+    text-decoration: none;
+}
+
+.navbar-nav{
+	margin-left: 67% !important;
+}
+
+.navbar .nav-link {
+    color: #fff;
+}
+
+.navbar .nav-link:hover,
+.navbar .nav-link:focus {
+    color: #fff;
+    text-decoration: none;
+}
+
+.navbar .navbar-brand {
+    color: #fff;
+}
+
+.navbar .navbar-brand-black {
+    color: black;
+    font-size: 20px
+}
+
 
 .cart-wrap .empty {
 	height:10rem;
