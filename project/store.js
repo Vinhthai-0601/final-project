@@ -110,6 +110,9 @@ function getImage(list, tar) {
           <div class="card-body text-white">
             <h5>${item.name}</h5>
             <h4 class="price-usd"><i class="fas fa-dollar-sign"></i> ${item.price.toLocaleString('en')}</h4>
+            <div class="container-1">
+             <button class="btn">Button</button>
+           </div>
           </div>
       </div>
     </a>`

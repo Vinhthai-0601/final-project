@@ -14,6 +14,29 @@ body {
     background-position: center;
 }
 
+.container-1 {
+  position: relative;
+  width: 100%;
+  max-width: 400px;
+}
+.container-1 .btn {
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  background-color: #555;
+  color: white;
+  font-size: 16px;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 5px;
+  margin: 20px 20%;
+}
+
+.container-1 .btn:hover {
+  background-color: white;
+  color:black;
+}
+
 .brands {
     display: flex;
     margin-top: 24px;
