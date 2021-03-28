@@ -10,7 +10,7 @@ $(document).ready(function(){
   getWatches(omega, 3, 5);
   getWatches(hublot, 5, 5);
   getWatches(blancpain, 7, 5);
-  $(".co").click(function(e){
+  $(".Seeall").click(function(e){
     e.preventDefault();
     console.log(e.target);
     if(e.target.classList.contains('rolex')){
@@ -104,15 +104,17 @@ function getWatches(tar, min, max) {
 function getImage(list, tar) {
   let output = "";
   list.forEach((item, i) => {
-    output += `<a href="#">
+    let price = item.price.toLocaleString('en');
+    output += `<a href="#" id="pro">
       <div class="card col-md ">
         <img src="${item.image}" class="card-img ">
           <div class="card-body text-white">
-            <h5>${item.name}</h5>
-            <h4 class="price-usd"><i class="fas fa-dollar-sign"></i> ${item.price.toLocaleString('en')}</h4>
+            <h5>${item.title}</h5>
+            <h6>${item.name}</h6>
+            <h4><i class="fas fa-dollar-sign"></i> ${price}</h4>
             <div class="container-1">
-             <button class="btn">Button</button>
-           </div>
+              <button class="btn">Select</button>
+            </div>
           </div>
       </div>
     </a>`
